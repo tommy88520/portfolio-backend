@@ -7,9 +7,12 @@ import (
 )
 
 func ApiRouters(r *gin.Engine) {
-	apiRouters := r.Group("/index")
+	apiRouters := r.Group("/menu")
 
 	{
 		apiRouters.GET("/", service.GetIndex)
+		apiRouters.POST("/create-menu", service.CreateMenu)
+		apiRouters.GET("/get-menu", service.GetAllKites)
+
 	}
 }

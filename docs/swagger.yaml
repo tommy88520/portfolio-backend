@@ -1,4 +1,33 @@
 info:
   contact: {}
-paths: {}
+paths:
+  /menu/create-menu:
+    post:
+      parameters:
+      - description: navigation
+        in: formData
+        name: navigation
+        required: true
+        type: string
+      - description: image
+        in: formData
+        name: image
+        required: true
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      tags:
+      - CreateMenu
+  /user:
+    get:
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      tags:
+      - Index
 swagger: "2.0"
