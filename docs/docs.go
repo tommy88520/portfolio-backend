@@ -47,6 +47,21 @@ const docTemplate = `{
                 }
             }
         },
+        "/menu/get-menu": {
+            "get": {
+                "tags": [
+                    "GetMenu"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "code\",\"message\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
         "/user": {
             "get": {
                 "tags": [

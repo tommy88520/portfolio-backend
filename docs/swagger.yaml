@@ -21,6 +21,15 @@ paths:
             type: string
       tags:
       - CreateMenu
+  /menu/get-menu:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      tags:
+      - GetMenu
   /user:
     get:
       responses:

@@ -26,3 +26,8 @@ func GetMenu() []*Menu {
 	utils.DB.Find(&data)
 	return data
 }
+
+func EditMenu(id int, menu Menu) *gorm.DB {
+	result := utils.DB.Model(&menu).Where("id=?", id).Updates(Menu{Navigation: menu.Navigation, Image: menu.Image})
+	return result
+}
