@@ -61,13 +61,13 @@ func GetAllMenu(c *gin.Context) {
 	})
 }
 
-// updateMenu
+// editMenu
 // @Tags updateMenu
 // @param id formData string true "id" default:"none"
 // @param navigation formData string true "navigation" default:"tommy222"
 // @param image formData string true "image" default:"none"
 // @Success 200 {string} json{"code","message"}
-// @Router /api/get-menu [post]
+// @Router /api/edit-menu [post]
 func EditMenu(c *gin.Context) {
 	menu := models.Menu{}
 	// result := model.EditMenu(c.PostForm(id))
